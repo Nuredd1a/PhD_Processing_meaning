@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ANNOTATION_DOCUMENT AUTHOR="" DATE="2023-04-21T21:55:59+01:00"
+    FORMAT="3.0" VERSION="3.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.mpi.nl/tools/elan/EAFv3.0.xsd">
+    <HEADER MEDIA_FILE="" TIME_UNITS="milliseconds">
+        <PROPERTY NAME="URN">urn:nl-mpi-tools-elan-eaf:bbfd7dc3-e440-477c-ac19-4fda50035e70</PROPERTY>
+        <PROPERTY NAME="lastUsedAnnotationId">4</PROPERTY>
+    </HEADER>
+    <TIME_ORDER>
+        <TIME_SLOT TIME_SLOT_ID="ts1" TIME_VALUE="580"/>
+        <TIME_SLOT TIME_SLOT_ID="ts2" TIME_VALUE="580"/>
+        <TIME_SLOT TIME_SLOT_ID="ts3" TIME_VALUE="580"/>
+        <TIME_SLOT TIME_SLOT_ID="ts4" TIME_VALUE="580"/>
+        <TIME_SLOT TIME_SLOT_ID="ts5" TIME_VALUE="1880"/>
+        <TIME_SLOT TIME_SLOT_ID="ts6" TIME_VALUE="1880"/>
+        <TIME_SLOT TIME_SLOT_ID="ts7" TIME_VALUE="1880"/>
+        <TIME_SLOT TIME_SLOT_ID="ts8" TIME_VALUE="1880"/>
+    </TIME_ORDER>
+    <TIER LINGUISTIC_TYPE_REF="default-lt" TIER_ID="SP01"/>
+    <TIER LINGUISTIC_TYPE_REF="default-lt" TIER_ID="SP02"/>
+    <TIER LINGUISTIC_TYPE_REF="default-lt" TIER_ID="Utterance"/>
+    <TIER LINGUISTIC_TYPE_REF="default-lt" TIER_ID="Clause"/>
+    <TIER LINGUISTIC_TYPE_REF="Pause manner" TIER_ID="Pause manner">
+        <ANNOTATION>
+            <ALIGNABLE_ANNOTATION ANNOTATION_ID="a1"
+                TIME_SLOT_REF1="ts1" TIME_SLOT_REF2="ts5">
+                <ANNOTATION_VALUE/>
+            </ALIGNABLE_ANNOTATION>
+        </ANNOTATION>
+    </TIER>
+    <TIER LINGUISTIC_TYPE_REF="Pause location" TIER_ID="Pause location">
+        <ANNOTATION>
+            <ALIGNABLE_ANNOTATION ANNOTATION_ID="a2"
+                TIME_SLOT_REF1="ts2" TIME_SLOT_REF2="ts6">
+                <ANNOTATION_VALUE/>
+            </ALIGNABLE_ANNOTATION>
+        </ANNOTATION>
+    </TIER>
+    <TIER LINGUISTIC_TYPE_REF="Repetition" TIER_ID="Repetition">
+        <ANNOTATION>
+            <ALIGNABLE_ANNOTATION ANNOTATION_ID="a3"
+                TIME_SLOT_REF1="ts3" TIME_SLOT_REF2="ts7">
+                <ANNOTATION_VALUE/>
+            </ALIGNABLE_ANNOTATION>
+        </ANNOTATION>
+    </TIER>
+    <TIER LINGUISTIC_TYPE_REF="Truncation" TIER_ID="Truncation">
+        <ANNOTATION>
+            <ALIGNABLE_ANNOTATION ANNOTATION_ID="a4"
+                TIME_SLOT_REF1="ts4" TIME_SLOT_REF2="ts8">
+                <ANNOTATION_VALUE/>
+            </ALIGNABLE_ANNOTATION>
+        </ANNOTATION>
+    </TIER>
+    <LINGUISTIC_TYPE GRAPHIC_REFERENCES="false"
+        LINGUISTIC_TYPE_ID="default-lt" TIME_ALIGNABLE="true"/>
+    <LINGUISTIC_TYPE CONTROLLED_VOCABULARY_REF="Pause manner"
+        GRAPHIC_REFERENCES="false" LINGUISTIC_TYPE_ID="Pause manner" TIME_ALIGNABLE="true"/>
+    <LINGUISTIC_TYPE CONTROLLED_VOCABULARY_REF="Pause location"
+        GRAPHIC_REFERENCES="false" LINGUISTIC_TYPE_ID="Pause location" TIME_ALIGNABLE="true"/>
+    <LINGUISTIC_TYPE CONTROLLED_VOCABULARY_REF="Repetition"
+        GRAPHIC_REFERENCES="false" LINGUISTIC_TYPE_ID="Repetition" TIME_ALIGNABLE="true"/>
+    <LINGUISTIC_TYPE CONTROLLED_VOCABULARY_REF="Truncation"
+        GRAPHIC_REFERENCES="false" LINGUISTIC_TYPE_ID="Truncation" TIME_ALIGNABLE="true"/>
+    <LANGUAGE LANG_DEF="http://cdb.iso.org/lg/CDB-00130975-001"
+        LANG_ID="und" LANG_LABEL="undetermined (und)"/>
+    <CONSTRAINT
+        DESCRIPTION="Time subdivision of parent annotation's time interval, no time gaps allowed within this interval" STEREOTYPE="Time_Subdivision"/>
+    <CONSTRAINT
+        DESCRIPTION="Symbolic subdivision of a parent annotation. Annotations refering to the same parent are ordered" STEREOTYPE="Symbolic_Subdivision"/>
+    <CONSTRAINT DESCRIPTION="1-1 association with a parent annotation" STEREOTYPE="Symbolic_Association"/>
+    <CONSTRAINT
+        DESCRIPTION="Time alignable annotations within the parent annotation's time interval, gaps are allowed" STEREOTYPE="Included_In"/>
+    <CONTROLLED_VOCABULARY CV_ID="Pause location">
+        <DESCRIPTION LANG_REF="und"/>
+        <CV_ENTRY_ML CVE_ID="cveid_856abcd7-09ef-4dc7-9f41-fffc8f4cf1e1">
+            <CVE_VALUE LANG_REF="und">Turn-taking</CVE_VALUE>
+        </CV_ENTRY_ML>
+        <CV_ENTRY_ML CVE_ID="cveid_3eddf096-7156-40fd-86f1-9d2ad2b96cfe">
+            <CVE_VALUE LANG_REF="und">Between-utterance</CVE_VALUE>
+        </CV_ENTRY_ML>
+        <CV_ENTRY_ML CVE_ID="cveid_384ed21e-b7de-41ce-a80a-2f539fd48bc0">
+            <CVE_VALUE LANG_REF="und">Between-clause</CVE_VALUE>
+        </CV_ENTRY_ML>
+        <CV_ENTRY_ML CVE_ID="cveid_57b30540-e0de-4e6c-bf2a-8c67b83a2227">
+            <CVE_VALUE LANG_REF="und">Within-clause</CVE_VALUE>
+        </CV_ENTRY_ML>
+        <CV_ENTRY_ML CVE_ID="cveid_60e0ac60-40ff-4db5-bf9f-813535466e39">
+            <CVE_VALUE LANG_REF="und">Within-phrase</CVE_VALUE>
+        </CV_ENTRY_ML>
+    </CONTROLLED_VOCABULARY>
+    <CONTROLLED_VOCABULARY CV_ID="Pause manner">
+        <DESCRIPTION LANG_REF="und"/>
+        <CV_ENTRY_ML CVE_ID="cveid_e8d148ed-cb89-4737-9dc5-dfe7c4c40efc">
+            <CVE_VALUE LANG_REF="und">Silent</CVE_VALUE>
+        </CV_ENTRY_ML>
+        <CV_ENTRY_ML CVE_ID="cveid_e8cac8ca-15a8-4031-b7ff-5e0725bd20e6">
+            <CVE_VALUE LANG_REF="und">Filled</CVE_VALUE>
+        </CV_ENTRY_ML>
+        <CV_ENTRY_ML CVE_ID="cveid_e53acf78-112d-4b4a-9420-6dac68be8444">
+            <CVE_VALUE LANG_REF="und">Prolongation</CVE_VALUE>
+        </CV_ENTRY_ML>
+    </CONTROLLED_VOCABULARY>
+    <CONTROLLED_VOCABULARY CV_ID="Repetition">
+        <DESCRIPTION LANG_REF="und"/>
+        <CV_ENTRY_ML CVE_ID="cveid_256e26fe-4b3e-417e-8da3-b8992e9210b0">
+            <CVE_VALUE LANG_REF="und">sound</CVE_VALUE>
+        </CV_ENTRY_ML>
+        <CV_ENTRY_ML CVE_ID="cveid_3e60fe2b-4e1c-481e-a37f-d28218326bb8">
+            <CVE_VALUE LANG_REF="und">word</CVE_VALUE>
+        </CV_ENTRY_ML>
+        <CV_ENTRY_ML CVE_ID="cveid_90aa1c44-38bc-4d45-8bf8-43c0499dc1a3">
+            <CVE_VALUE LANG_REF="und">phrase</CVE_VALUE>
+        </CV_ENTRY_ML>
+        <CV_ENTRY_ML CVE_ID="cveid_ac9acb3e-ef3d-4c49-a326-32f97543aee4">
+            <CVE_VALUE LANG_REF="und">phrase with revision</CVE_VALUE>
+        </CV_ENTRY_ML>
+    </CONTROLLED_VOCABULARY>
+    <CONTROLLED_VOCABULARY CV_ID="Truncation">
+        <DESCRIPTION LANG_REF="und"/>
+        <CV_ENTRY_ML CVE_ID="cveid_7f7ca46f-9226-4820-9591-4c76e656aa4a">
+            <CVE_VALUE LANG_REF="und">Between-clause</CVE_VALUE>
+        </CV_ENTRY_ML>
+        <CV_ENTRY_ML CVE_ID="cveid_51356d03-8228-4484-9d0b-fab08eb4f3d0">
+            <CVE_VALUE LANG_REF="und">Within-clause</CVE_VALUE>
+        </CV_ENTRY_ML>
+        <CV_ENTRY_ML CVE_ID="cveid_3e5322bc-754a-49bf-9ae3-d3502aad5af8">
+            <CVE_VALUE LANG_REF="und">Within-phrase</CVE_VALUE>
+        </CV_ENTRY_ML>
+    </CONTROLLED_VOCABULARY>
+</ANNOTATION_DOCUMENT>
